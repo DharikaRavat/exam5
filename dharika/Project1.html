@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .parent {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-image: url(./background.jpeg);
+        }
+
+        .child {
+            height: 670px;
+            width: 530px;
+            background-color: rgba(80, 76, 76, 0.692);
+            border: 3px solid rgb(255, 255, 255);
+            margin-left: 18%;
+            backdrop-filter: blur(20px);
+            overflow: hidden;
+        }
+        
+        .parent:hover {
+            background-color: rgba(80, 76, 76, 0.692);
+        }
+        
+        .child:hover .child {
+            background-color:  black;
+        }
+         
+        .child:hover .box {
+            background-color: black;
+            color: white;
+        }
+        .child:hover {
+            background-color: black;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        .img1 {
+            height: 355px;
+            width: 530px;
+        }
+
+        .p1 {
+            font-size: 34px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: rgb(255, 255, 255);
+            padding-left: 26px;
+            padding-top: 20px;
+            font-family: sans-serif;
+            
+        }
+        
+
+        
+        .pp {
+            font-size: 36px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: rgb(255, 255, 255);
+            padding-left: 27px;
+            padding-top: 9px;
+            font-family: sans-serif;
+            
+        }
+        .p2 {
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 15px;
+            padding-top: 10px;
+            word-spacing: 2px;
+            
+        }
+
+        .p2 {
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 15px;
+            padding-top: 10px;
+            word-spacing: 2px;
+            
+        }
+
+        .p2 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 28px;
+            word-spacing: 2px;
+            
+        }
+
+        .a1 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 10px;
+            word-spacing: 15px;
+            
+        }
+
+        .a2 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 30px;
+            padding-top: 10px;
+            word-spacing: 9px;
+            
+        }
+
+        .a3 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 10px;
+            word-spacing: 12px;
+            
+        }
+
+        .a4 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 10px;
+            word-spacing: 17px;
+            
+        }
+
+        .a5 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 10px;
+            word-spacing: 3px;
+            
+        }
+
+        .a6 {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-top: 10px;
+            word-spacing: 4px;
+            
+        }
+
+        
+        .main {
+            padding-top: 8%;
+        }
+
+        .box {
+            height: 42px;
+            width: 91px;
+            background-color: white;
+            border-radius: 6px;
+            position: absolute;
+            left: 405px;
+            top: 15PX;
+            z-index: 100;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            padding-left: 20px;
+            padding-top: 13px;
+            font-weight: bold;
+        }
+
+        /* .child .box:hover {
+            background-color: black;
+            color: white;
+        } */
+
+        .btn {
+            height: 60px;
+            width: 176px;
+            color: white;
+            background-color: rgb(224, 146, 1);
+            padding-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            margin-left: 30px;
+            margin-top: 33px;
+            font-size: 23px;
+            padding-top: 14px;
+            padding-left: 5px;
+            letter-spacing: 1px;
+            margin-bottom: 27px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="main">
+        <div class="child">
+            <img class="img1" src="vr-box (1).jpg" alt="">
+            <div class="box">VR BOX</div>
+            <p class="p1">Virtual Reality in Education</p>
+            <P class="pp">2023:7 Important Benefits</p>
+            <p class="p2">Virtual reality (VR) technology has the potential</p>
+            <p class="a1">to revolutionize education in the coming</p>
+            <p class="a2">years.Virtual reality (VR) technology has the</p>
+            <p class="a3">potential to revolutionize education in the </p>
+            <p class="a4">comingyears.Virtual reality (VR) technology </p>
+            <p class="a5">has the potential to revolutionize education in </p>
+            <p class="a6">the coming years.</p>
+            </p>
+           
+            <button class="btn">Read more..</button>
+            
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
